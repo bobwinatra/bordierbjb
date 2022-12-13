@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+
+}
+
+/* li {
+    list-style: none;
+} */
+
+img {
+    object-fit: cover;
+}
+
+/* HERO */
+.hero_img {
+    height: 100vh;
+    position: relative;
+    background-position: center center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://ae01.alicdn.com/kf/Hca7a935bf5054e3a9ae774fb4801a845j/Bingkai-kayu-Bordir-Hoop-Cincin-DIY-Needlepoint-Embroidery-Cross-Stitch-Mesin-Round-Loop-Tangan-Jahit-Rumah.jpg_Q90.jpg_.webp);
+    z-index: -1;
+}
+
+.hero_img::before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.5;
+    background-color: forestgreen;
+}
+
+.text_content {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: 15%;
+    color: #fff;
+}
+
+.box_hero_img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center center;
+    background-image: url(/assets/images/mesin-bordir-komputer.jpg);
+}
+
+.box_hero_img .benner {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    color: #fff;
+}
+
+.box_hero_img::before {
+    content: "";
+    background-color: green;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.banner_img {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/assets/images/img2.jpg);
+}
+
+.banner_img::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 400px;
+    opacity: 0.6;
+    background-color: green;
+    z-index: 1;
+}
+
+.banner_text {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 300px;
+    left: 0;
+    bottom: 0px;
+    top: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner_text p {
+    padding-bottom: 20px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.banner_img p::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    height: 3px;
+    background-color: yellow;
+}
+
+.banner_bottom {
+    position: relative;
+    bottom: 200px;
+}
+
+.banner_card {
+    height: 300px;
+    z-index: -1;
+}
+
+.testimoni {
+    position: relative;
+    bottom: 150px;
+}
